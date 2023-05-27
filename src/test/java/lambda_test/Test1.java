@@ -1,5 +1,6 @@
 package lambda_test;
 
+import com.google.gson.internal.bind.util.ISO8601Utils;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -49,6 +50,8 @@ public void submitform(){
     button.click();
     WebElement massage=driver.findElement(By.xpath("//p[@style='display: block;']"));
     Assert.assertEquals(massage.getText(),"Thanks for contacting us, we will get back to you shortly.");
+    System.out.println("this one for github");
 
 }
+
 }
